@@ -9,18 +9,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
 
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hi+Melody&family=Nanum+Brush+Script&family=Nanum+Pen+Script&family=Single+Day&family=Sunflower:wght@500&display=swap" rel="stylesheet">
+
+
+
 <style>
 * {
   box-sizing: border-box;
 }
 
-table, th, td {border: 1px solid black; border-collapse: collapse;}
+table, th, td {border-bottom: 1px solid #8f7e7e; border-collapse: collapse;}
 table{
   width:100%;
 }
 /*td:hover{background-color: lightblue;}
 */
-th{font-weight: bold; height: 50px;}
+th{font-weight: bold;  height: 50px; 
+    font-family: 'Nanum Pen Script', cursive;
+    color:gray;
+    font-size: 30px;
+    padding:10px;
+}
 
 td{text-align: left; vertical-align: text-top; width: 200px; height: 100px; padding: 10px}
 
@@ -32,29 +45,35 @@ a {
   color:black;
   /* 다른 스타일링 속성들을 추가할 수 있습니다. */
 }
+a:hover{
+  text-decoration: none;
+color:hotpink;
+}
 h1{
 text-align: center;
 font-weight:bold;
 color : white;
+text-shadow: 2px 2px 2px black;
 }
 .one{
-border-right: 1px solid black;
+border-right: 1px solid #D8D6D6;
 width:110px;
 height:400px;
 }
 .day{
-   border-bottom: 1px solid black;
+   border-bottom: 1px solid #e8fcf3;
    width : 100px;
-   background-color : #CAD5DF;
+   background-color : #b0a876;
   border-radius: 30px 10px 50px;
   margin-bottom: 10px;
   font-family: 'Noto Serif KR', serif;
   text-align: center;
+  box-shadow: 3px 3px 3px #d8caa6;
 }
 .day:hover{
 border-bottom: 1px solid black;
 width : 100px;
-background-color : blue;
+background-color : #f5d48e;
 border-radius: 30px 10px 50px;
 margin-bottom: 10px;
 font-family: 'Noto Serif KR', serif;
@@ -68,10 +87,19 @@ color:black;
 font-family: 'Noto Serif KR', serif;
 color : hotpink;
 }
+span{
+    font-family: 'Nanum Pen Script', cursive;
+    color:gray;
+    font-size: 35px;
+
+}
+
+
+
 </style>
 </head>
 <body>
-<div style="background-color:#8f7e7e;">
+<div style="border-radius: 10px; background-color:#8f7e7e;">
 <h1>정윤, 수업일지<h1>
 </div>
 <div class="one"  style="float:left; margin-top:20px; padding-top:10px;">
@@ -81,8 +109,41 @@ color : hotpink;
     <div class="day"><a href="12_23.html">24년 2월</a></div>
 </div>
 <div style="margin-left:130px;">
-
+<span>12월 27일 수업내용</span>
+    <table style="margin-top:10px;">
+<thead>
+    <tr>
+        <th style="color:black;">책</th>
+        <th style="color:black;">진도자료</th>
+        <th style="color:black;">숙제달성률</th>
+        <th style="color:black;">숙제정답률</th>
+         <th style="color:black;">숙제오답률</th>
+    </tr>
+</thead>
+<tr>
+  <th>마플시너지</th>
+  <th><a href="./studyfile/미적마플시너지_31~38.pdf" download>파일 다운로드</a></th>
+  <th>100%</th>
+  <th>80%</th>
+  <th></th>
+</tr>
+<tr>
+  <th>숨마쿰라우데</th>
+  <th>p59 Complete</th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+<tr>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+</table>
 
 </div>
 </body>
 </html>
+
